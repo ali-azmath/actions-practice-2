@@ -27,6 +27,3 @@ jobs:
     steps:
       - name: Goodbye
         run: echo "All done!"
-
-              - name: Fail on purpose
-        run: exit 1
