@@ -20,3 +20,10 @@ jobs:
           echo "Triggered by: ${{ github.actor }}"
           echo "Commit: ${{ github.sha }}"
           echo "Branch: ${{ github.ref_name }}"
+
+  say-goodbye:
+    runs-on: ubuntu-latest
+    needs: say-hello
+    steps:
+      - name: Goodbye
+        run: echo "All done!"
